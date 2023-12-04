@@ -14,6 +14,7 @@ const config: Config = {
       },
     },
     fontSize: {
+      sx: ["16px", {lineHeight: "30px"}],
       xs: ["16px", {lineHeight: "30px"}],
       sm: ["18px", {lineHeight: "30px"}],
       md: ["21px", {lineHeight: "30px"}],
