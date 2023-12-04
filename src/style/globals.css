@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.transitions {
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
+@import url("../fonts/Syne/style.css");
+@import url("../fonts/Inter/style.css");
+
+body {
+  @apply font-inter;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

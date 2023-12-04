@@ -14,7 +14,7 @@ function Navitem(props: NavitemProps) {
 
   return (
     <div
-      className="relative"
+      className="group relative"
       onMouseOver={() => setShow(true)}
       onMouseOut={() => setShow(false)}
     >
@@ -35,20 +35,23 @@ function Navitem(props: NavitemProps) {
       </Link>
       <span
         className={`absolute min-w-[200px] animate__faster animate__animated ${
-          show ? "animate__fadeInUp " : "animate__fadeOutDown"
+          show ? "animate__fadeInUp " : "animate__fadeOutDown hidden"
         }`}
       >
         {list && (
-          <div className="bg-white rounded-md flex flex-col py-2">
-            {list.map(({title, path}, index) => (
-              <Link
-                key={index}
-                href={path}
-                className="text-sx text-black font-semibold py-1 px-5 hover:underline"
-              >
-                {title}
-              </Link>
-            ))}
+          <div>
+            <div className="w-4 h-4 bg-white translate-x-9 translate-y-2 rotate-45" />
+            <div className="bg-white rounded-md flex flex-col py-2">
+              {list.map(({title, path}, index) => (
+                <Link
+                  key={index}
+                  href={path}
+                  className="text-sx text-black font-semibold py-1 px-5 hover:underline"
+                >
+                  {title}
+                </Link>
+              ))}
+            </div>
           </div>
         )}
       </span>

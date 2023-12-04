@@ -1,4 +1,5 @@
 import type {Config} from "tailwindcss";
+import {fontFamily} from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -21,10 +22,14 @@ const config: Config = {
       base: ["30px", {lineHeight: "1.4em"}],
       lg: ["35px", {lineHeight: "1.4em"}],
       xl: ["70px", {lineHeight: "1em", letterSpacing: "-.7px"}],
-      "2xl": ["104px", {lineHeight: "1em", letterSpacing: "-1px"}],
     },
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",
+      md: "4px 4px 0px 0px #000",
+    },
+    fontFamily: {
+      syne: ["Syne", ...fontFamily.sans],
+      inter: ["'Inter'", ...fontFamily.sans],
     },
     container: {
       center: true,
@@ -32,8 +37,14 @@ const config: Config = {
         DEFAULT: "1rem",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1300px",
+      "2xl": "1920px",
+    },
   },
   plugins: [],
 };
 export default config;
-//lato: ["'Lato'", ...fontFamily.sans],

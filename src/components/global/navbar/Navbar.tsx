@@ -16,28 +16,51 @@ const navLinks = [
     ],
   },
   {title: "About Us", path: "/"},
-  {title: "Pages", path: "/"},
-  {title: "Blog", path: "/"},
+  {
+    title: "Pages",
+    path: "/",
+    list: [
+      {title: "About Us", path: "/"},
+      {title: "Pricing", path: "/"},
+      {title: "blog ", path: "/"},
+      {title: "Service", path: "/"},
+      {title: "Team", path: "/"},
+      {title: "Portfolio", path: "/"},
+      {title: "Utility", path: "/"},
+      {title: "Account", path: "/"},
+    ],
+  },
+  {
+    title: "Blog",
+    path: "/",
+    list: [
+      {title: "blog", path: "/"},
+      {title: "Blog grid", path: "/"},
+      {title: "blog Details", path: "/"},
+    ],
+  },
   {title: "Contact Us", path: "/"},
 ];
 
 function Navbar() {
   return (
-    <nav className="container py-3.5 fixed left-0 right-0">
-      <div className="flex justify-between items-center gap-9">
-        <div className="flex items-center gap-9">
-          <div>
-            <img src="/images/logo.svg" alt="" />
+    <nav className="bg-black py-3.5 fixed left-0 right-0 z-10">
+      <div className="container">
+        <div className="flex justify-between items-center gap-9">
+          <div className="flex items-center gap-9">
+            <div>
+              <img src="/images/logo.svg" alt="" />
+            </div>
+            <div className="flex">
+              {navLinks.map(({title, path, list}, index) => (
+                <Navitem title={title} path={path} list={list} key={index} />
+              ))}
+            </div>
           </div>
-          <div className="flex">
-            {navLinks.map(({title, path, list}, index) => (
-              <Navitem title={title} path={path} list={list} key={index} />
-            ))}
-          </div>
+          <Link href="">
+            <Buttons name="Contact Us" />
+          </Link>
         </div>
-        <Link href="">
-          <Buttons name="Contact Us" />
-        </Link>
       </div>
     </nav>
   );

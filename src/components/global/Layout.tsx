@@ -15,10 +15,10 @@ function Layout(props: LayoutProps) {
     AOS.init({
       duration: 700,
     });
-  }, []);
+  });
 
   return (
-    <main className="bg-black">
+    <main>
       <Navbar />
       {children}
     </main>
