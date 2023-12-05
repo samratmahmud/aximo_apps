@@ -2,6 +2,7 @@ import Header from "./home/Header";
 import SuccessRate from "./home/SuccessRate";
 import Cards from "./home/Cards";
 import SliderCards from "./home/SliderCards";
+import FrequentlyQuestions from "./home/FrequentlyQuestions";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Cards />
       <SuccessRate />
       <SliderCards />
+      <FrequentlyQuestions />
     </main>
   );
 }

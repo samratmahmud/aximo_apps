@@ -1,32 +1,34 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const sliderPage = [
   {
     title: "Product Design",
     contain:
       "Developing the look and feel of physical products, aesthetics, and functionality.",
-    icon: "/images/icons8-arrow-right-32 (1).png",
-    className: "bg-slide1 bg-cover bg-no-repeat w-full",
+    className: "bg-slide1 bg-cover bg-no-repeat",
   },
   {
     title: "Logo and Branding",
     contain:
-      "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
-    icon: "/images/icons8-arrow-right-32 (1).png",
-    className: "bg-slide2 bg-cover bg-no-repeat w-full",
+      "Creating or refreshing a company's logo and developing a cohesive visual identity.",
+    className: "bg-slide2 bg-cover bg-no-repeat",
   },
   {
     title: "App UI/UX Design",
     contain:
-      "Developing the look and feel of physical products, aesthetics, and functionality.",
-    icon: "/images/icons8-arrow-right-32 (1).png",
+      "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
+    className: "bg-slide3 bg-cover bg-no-repeat",
   },
   {
     title: "Packaging Design",
     contain:
       "Creating packaging solutions for products that not only protect attract customers on store.",
-    icon: "/images/icons8-arrow-right-32 (1).png",
+    className: "bg-slide4 bg-cover bg-no-repeat",
   },
 ];
 
@@ -41,24 +43,34 @@ function SliderCards() {
             <img src="/images/star2.png" alt="" />
           </span>
         </h2>
-        <div className="grid grid-cols-2 gap-6">
-          {sliderPage.map(({title, icon, contain, className}, index) => (
+        <Slider
+          dots={true}
+          infinite={true}
+          speed={500}
+          slidesToShow={2}
+          slidesToScroll={1}
+        >
+          {sliderPage.map(({title, contain, className}, index) => (
             <div
               key={index}
-              className={`p-6 border-[5px] border-gray-200 rounded-[20px] ${className}`}
+              className="overflow-hidden border-[5px] border-gray-200 rounded-[20px]"
             >
-              <h3 className="text-base text-gray-200 font-bold font-syne mb-2.5">
-                {title}
-              </h3>
-              <div className="flex flex-row gap- justify-between">
-                <p className="text-gray-200 text-sm">{contain}</p>
-                <Link href="/">
-                  <img src={icon} alt="" />
-                </Link>
+              <div
+                className={`p-6 scale-100 hover:scale-105 duration-500 w-full aspect-square ${className} flex flex-col justify-end`}
+              >
+                <h3 className="text-base text-gray-200 font-bold font-syne mb-2.5">
+                  {title}
+                </h3>
+                <div className="flex flex-row gap- justify-between">
+                  <p className="text-gray-200 text-sm">{contain}</p>
+                  <Link href="/">
+                    <img src="/images/arrow-right.svg" alt="" />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         praimary: "#BFF747",
-        gray: {"200": "#FDFDE1"},
+        gray: {"200": "#FDFDE1", "300": "#e6e6e6"},
       },
     },
     fontSize: {
@@ -34,6 +34,8 @@ const config: Config = {
     backgroundImage: {
       slide1: "url('/images/project1.png')",
       slide2: "url('/images/project2.png')",
+      slide3: "url('/images/project3.png')",
+      slide4: "url('/images/project4.png')",
     },
     container: {
       center: true,
