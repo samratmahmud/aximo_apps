@@ -14,7 +14,11 @@ function Questions(props: questionProps) {
     setOpen((open) => !open);
   };
   return (
-    <div className="flex flex-col gap-4 border-2 border-black rounded-3xl p-6">
+    <div
+      className={`flex flex-col gap-4 border-2 border-black rounded-3xl p-6 ${
+        open ? "shadow-md bg-praimary duration-300" : ""
+      }`}
+    >
       <div className="flex items-center justify-between">
         <h3 className="text-base font-bold font-syne">{question}</h3>
         <button onClick={handelClick}>
@@ -25,7 +29,7 @@ function Questions(props: questionProps) {
           />
         </button>
       </div>
-      {open && <p className="text-md">{answer}</p>}
+      {open && <p className="text-sm">{answer}</p>}
     </div>
   );
 }

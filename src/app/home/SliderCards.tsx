@@ -10,25 +10,25 @@ const sliderPage = [
     title: "Product Design",
     contain:
       "Developing the look and feel of physical products, aesthetics, and functionality.",
-    className: "bg-slide1 bg-cover bg-no-repeat",
+    thumnail: "/images/project1.png",
   },
   {
     title: "Logo and Branding",
     contain:
       "Creating or refreshing a company's logo and developing a cohesive visual identity.",
-    className: "bg-slide2 bg-cover bg-no-repeat",
+    thumnail: "/images/project2.png",
   },
   {
     title: "App UI/UX Design",
     contain:
       "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
-    className: "bg-slide3 bg-cover bg-no-repeat",
+    thumnail: "/images/project3.png",
   },
   {
     title: "Packaging Design",
     contain:
       "Creating packaging solutions for products that not only protect attract customers on store.",
-    className: "bg-slide4 bg-cover bg-no-repeat",
+    thumnail: "/images/project4.png",
   },
 ];
 
@@ -45,27 +45,35 @@ function SliderCards() {
         </h2>
         <Slider
           dots={true}
+          arrows={false}
           infinite={true}
           speed={500}
           slidesToShow={2}
           slidesToScroll={1}
         >
-          {sliderPage.map(({title, contain, className}, index) => (
-            <div
-              key={index}
-              className="overflow-hidden border-[5px] border-gray-200 rounded-[20px]"
-            >
-              <div
-                className={`p-6 scale-100 hover:scale-105 duration-500 w-full aspect-square ${className} flex flex-col justify-end`}
-              >
-                <h3 className="text-base text-gray-200 font-bold font-syne mb-2.5">
-                  {title}
-                </h3>
-                <div className="flex flex-row gap- justify-between">
-                  <p className="text-gray-200 text-sm">{contain}</p>
-                  <Link href="/">
-                    <img src="/images/arrow-right.svg" alt="" />
-                  </Link>
+          {sliderPage.map(({title, contain, thumnail}, index) => (
+            <div key={index} className="group">
+              <div className="border-[5px] border-gray-200 rounded-[20px] aspect-[690/524] flex flex-col justify-end mx-3 relative z-0 overflow-hidden">
+                <img
+                  className="absolute h-full object-cover top-0 left-0 -z-10 scale-100 group-hover:scale-110 duration-500 ease-in-out"
+                  src={thumnail}
+                  alt=""
+                />
+                <div
+                  className="p-6"
+                  style={{
+                    background: "linear-gradient(transparent 1%,black 99%)",
+                  }}
+                >
+                  <h3 className="text-base text-gray-200 font-bold font-syne mb-2.5">
+                    {title}
+                  </h3>
+                  <div className="flex flex-row gap- justify-between">
+                    <p className="text-gray-200 text-sm">{contain}</p>
+                    <Link href="/">
+                      <img src="/images/arrow-right.svg" alt="" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

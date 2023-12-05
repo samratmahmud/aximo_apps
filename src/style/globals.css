@@ -14,3 +14,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}

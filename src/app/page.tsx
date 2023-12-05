@@ -3,6 +3,7 @@ import SuccessRate from "./home/SuccessRate";
 import Cards from "./home/Cards";
 import SliderCards from "./home/SliderCards";
 import FrequentlyQuestions from "./home/FrequentlyQuestions";
+import Feadback from "./home/Feadback";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SuccessRate />
       <SliderCards />
       <FrequentlyQuestions />
+      <Feadback />
     </main>
   );
 }

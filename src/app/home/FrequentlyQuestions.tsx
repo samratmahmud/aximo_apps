@@ -3,22 +3,27 @@ import React from "react";
 
 const questionsCard = [
   {
-    question: "How do I get started?",
+    question: "01/ Project idea",
     answer:
-      "You can get started by contacting us through our contact page or by sending us an email at",
+      "The process starts with a detailed discussion with the client to understand their idea & goals.",
   },
   {
-    question: "How do I get started?",
+    question: "02/ Brainstorming",
     answer:
-      "You can get started by contacting us through our contact page or by sending us an email at",
+      "Brainstorming is a group creativity technique in which members attempt to find a conclusion.",
+  },
+  {
+    question: "03/ Launch",
+    answer:
+      "The completed design assets or final product are delivered with necessary documentation.",
   },
 ];
 
 function FrequentlyQuestions() {
   return (
     <section>
-      <div className="container my-32">
-        <div>
+      <div className="container my-32 flex gap-4">
+        <div className="w-[63%]">
           <h2 className="text-xl font-bold font-syne max-w-4xl mb-6">
             Our high-quality{" "}
             <span className="inline-flex">
@@ -38,7 +43,7 @@ function FrequentlyQuestions() {
             project.
           </p>
         </div>
-        <div>
+        <div className="w-[37%] flex flex-col gap-5">
           {questionsCard.map(({answer, question}, index) => (
             <Questions
               key={index}
@@ -49,6 +54,7 @@ function FrequentlyQuestions() {
           ))}
         </div>
       </div>
+      <hr className="border border-gray-300" />
     </section>
   );
 }
