@@ -1,13 +1,15 @@
 import Header from "./home/Header";
-import DesignSolutions from "./home/DesignSolutions";
 import SuccessRate from "./home/SuccessRate";
+import Cards from "./home/Cards";
+import SliderCards from "./home/SliderCards";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <DesignSolutions />
+      <Cards />
       <SuccessRate />
+      <SliderCards />
     </main>
   );
 }

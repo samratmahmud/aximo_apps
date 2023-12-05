@@ -32,7 +32,7 @@ const cards = [
   },
 ];
 
-function DesignSolutions() {
+function Cards() {
   return (
     <section>
       <div className="container">
@@ -48,7 +48,7 @@ function DesignSolutions() {
             <div
               key={index}
               data-aos="fade-up"
-              className="border-2 border-black rounded-[20px] p-[30px] hover:bg-praimary duration-300 hover:shadow-md"
+              className="border-2 border-black rounded-[20px] p-[30px] hover:bg-praimary duration-500 hover:shadow-md"
             >
               <div className="mb-8">
                 <img className="w-20" src={logo} alt="" />
@@ -67,4 +67,4 @@ function DesignSolutions() {
   );
 }
 
-export default DesignSolutions;
+export default Cards;
