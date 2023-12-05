@@ -45,19 +45,22 @@ function Cards() {
         </h2>
         <div className="grid grid-cols-2 gap-5 mb-24">
           {cards.map(({title, logo, description, arrowIcon}, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              className="border-2 border-black rounded-[20px] p-[30px] hover:bg-praimary duration-500 hover:shadow-md"
-            >
-              <div className="mb-8">
-                <img className="w-20" src={logo} alt="" />
+            <div data-aos="fade-up">
+              <div
+                key={index}
+                className="border-2 border-black rounded-[20px] p-[30px] hover:bg-praimary duration-500 hover:shadow-md"
+              >
+                <div className="mb-8">
+                  <img className="w-20" src={logo} alt="" />
+                </div>
+                <div className=" text-base font-bold mb-4 font-syne">
+                  {title}
+                </div>
+                <div className="text-sm mb-7">{description}</div>
+                <Link href="/">
+                  <img src={arrowIcon} alt="" />
+                </Link>
               </div>
-              <div className=" text-base font-bold mb-4 font-syne">{title}</div>
-              <div className="text-sm mb-7">{description}</div>
-              <Link href="/">
-                <img src={arrowIcon} alt="" />
-              </Link>
             </div>
           ))}
         </div>

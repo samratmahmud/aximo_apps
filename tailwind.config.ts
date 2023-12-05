@@ -31,6 +31,10 @@ const config: Config = {
       syne: ["Syne", ...fontFamily.sans],
       inter: ["'Inter'", ...fontFamily.sans],
     },
+    backgroundImage: {
+      slide1: "url('/images/project1.png')",
+      slide2: "url('/images/project2.png')",
+    },
     container: {
       center: true,
       padding: {
