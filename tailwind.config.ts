@@ -22,6 +22,7 @@ const config: Config = {
       base: ["30px", {lineHeight: "1.4em"}],
       lg: ["35px", {lineHeight: "1.4em"}],
       xl: ["70px", {lineHeight: "1em", letterSpacing: "-.7px"}],
+      "2xl": ["104px", {lineHeight: "1em", letterSpacing: "-.7px"}],
     },
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",

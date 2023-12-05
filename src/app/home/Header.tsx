@@ -5,7 +5,7 @@ import React from "react";
 const imagesGroup = [
   "/images/user1.png",
   "/images/user3.png",
-  "/images/user1.png",
+  "/images/user2.png",
 ];
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
     <section className="pt-[200px] pb-28 bg-black mb-32">
       <div className="container flex flex-row gap-7">
         <div>
-          <h1 className="text-xl text-gray-200 font-bold mb-6 font-syne">
+          <h1 className="text-2xl text-gray-200 font-bold mb-6 font-syne">
             <span className="flex items-center gap-4">
               A creative
               <img className="h-[70px]" src="/images/star.png" alt="" />

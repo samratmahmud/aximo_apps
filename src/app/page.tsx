@@ -4,6 +4,8 @@ import Cards from "./home/Cards";
 import SliderCards from "./home/SliderCards";
 import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
+import Experiences from "./home/Experiences";
+import Peoples from "./home/Peoples";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <SliderCards />
       <FrequentlyQuestions />
       <Feadback />
+      <Experiences />
+      <Peoples />
     </main>
   );
 }
