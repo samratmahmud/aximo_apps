@@ -6,6 +6,7 @@ import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
 import Experiences from "./home/Experiences";
 import Peoples from "./home/people/Peoples";
+import Contract from "./home/Contract";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Feadback />
       <Experiences />
       <Peoples />
+      <Contract />
     </main>
   );
 }

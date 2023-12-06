@@ -1,6 +1,6 @@
 "use client";
-import SocialMedia from "@/app/home/people/SocialMedia";
 import React from "react";
+import PeopleGroup from "./PeopleGroup";
 
 const peopleImages = [
   {
@@ -178,8 +178,6 @@ const peopleImages = [
 ];
 
 function Peoples() {
-  const [tab, setTab] = React.useState(0);
-
   return (
     <section>
       <div className="container mb-24">
@@ -193,29 +191,13 @@ function Peoples() {
         <div className="flex gap-5">
           {peopleImages.map(
             ({thumbnail, name, describtion, socialSite}, index) => (
-              <div key={index} className="group">
-                <div className="border-[5px] border-black rounded-2xl overflow-hidden mb-6 relative">
-                  <img
-                    className="scale-100 hover:scale-105 duration-500"
-                    src={thumbnail}
-                    alt=""
-                  />
-                  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 flex gap-1.5">
-                    {socialSite?.map(({icons, link}, index) => (
-                      <SocialMedia
-                        handelChange={() => setTab(index)}
-                        key={index}
-                        icons={icons}
-                        link={link}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <div className="text-base font-bold font-syne mb-2 text-center">
-                  {name}
-                </div>
-                <div className="text-md text-center">{describtion}</div>
-              </div>
+              <PeopleGroup
+                key={index}
+                thumbnail={thumbnail}
+                name={name}
+                describtion={describtion}
+                socialSite={socialSite}
+              />
             )
           )}
         </div>
