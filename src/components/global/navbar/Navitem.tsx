@@ -34,7 +34,7 @@ function Navitem(props: NavitemProps) {
         )}
       </Link>
       <span
-        className={`absolute min-w-[200px] animate__faster animate__animated ${
+        className={`absolute min-w-[205px] animate__faster animate__animated ${
           show ? "animate__fadeInUp " : "animate__fadeOutDown hidden"
         }`}
       >

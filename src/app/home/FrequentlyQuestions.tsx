@@ -43,7 +43,7 @@ function FrequentlyQuestions() {
             project.
           </p>
         </div>
-        <div className="w-[37%] flex flex-col gap-5">
+        <div data-aos="fade-up" className="w-[37%] flex flex-col gap-5">
           {questionsCard.map(({answer, question}, index) => (
             <Questions
               key={index}

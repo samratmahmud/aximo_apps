@@ -5,7 +5,7 @@ import SliderCards from "./home/SliderCards";
 import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
 import Experiences from "./home/Experiences";
-import Peoples from "./home/Peoples";
+import Peoples from "./home/people/Peoples";
 
 export default function Home() {
   return (
