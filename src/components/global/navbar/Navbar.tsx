@@ -51,7 +51,7 @@ function Navbar() {
             <div>
               <img src="/images/logo.svg" alt="" />
             </div>
-            <div className="flex">
+            <div className="flex gap-1">
               {navLinks.map(({title, path, list}, index) => (
                 <Navitem title={title} path={path} list={list} key={index} />
               ))}

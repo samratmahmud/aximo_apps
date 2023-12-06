@@ -36,11 +36,7 @@ function Header() {
                       data-aos-duration={`${index + 1}000`}
                       className="-ml-1.5 first:-ml-0"
                     >
-                      <img
-                        className="rounded-full w-16h-16"
-                        src={image}
-                        alt=""
-                      />
+                      <img className="rounded-full" src={image} alt="" />
                     </div>
                   ))}
                 </div>
@@ -50,14 +46,18 @@ function Header() {
               </div>
               <Link href="/" className="inline-block">
                 <Buttons
-                  className="pl-[42px] pr-2.5"
+                  className="pl-[42px] pr-1.5"
                   name="Book a free consultation "
                   icon="/images/icons8-call-24.png"
                 />
               </Link>
             </div>
             <div className="absolute right-0">
-              <img src="/images/shape1.png" alt="" />
+              <img
+                className="animate__slideInLeft icon animate__animated animate__infinite"
+                src="/images/shape1.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

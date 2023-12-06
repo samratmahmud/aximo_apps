@@ -18,7 +18,7 @@ function Layout(props: LayoutProps) {
   });
 
   return (
-    <main>
+    <main className="bg-slate-200">
       <Navbar />
       {children}
     </main>

@@ -133,7 +133,7 @@ const peopleImages = [
     ],
   },
   {
-    thumbnail: "/images/team2.png",
+    thumbnail: "/images/team4.png",
     name: "Jack Taylor",
     describtion: "Senior Designer",
     socialSite: [
@@ -191,13 +191,15 @@ function Peoples() {
         <div className="flex gap-5">
           {peopleImages.map(
             ({thumbnail, name, describtion, socialSite}, index) => (
-              <PeopleGroup
-                key={index}
-                thumbnail={thumbnail}
-                name={name}
-                describtion={describtion}
-                socialSite={socialSite}
-              />
+              <div data-aos="fade-up" data-aos-duration={`${index + 0}000`}>
+                <PeopleGroup
+                  key={index}
+                  thumbnail={thumbnail}
+                  name={name}
+                  describtion={describtion}
+                  socialSite={socialSite}
+                />
+              </div>
             )
           )}
         </div>

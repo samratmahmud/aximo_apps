@@ -11,7 +11,14 @@ const config: Config = {
     extend: {
       colors: {
         praimary: "#BFF747",
-        gray: {"200": "#FDFDE1", "300": "#e6e6e6", "400": "#ccc"},
+        gray: {
+          "200": "#FDFDE1",
+          "300": "#e6e6e6",
+          "400": "#ccc",
+          "500": "#333",
+          "600": "#999",
+        },
+        slate: {"200": "#FFFCF2"},
       },
     },
     fontSize: {
@@ -28,7 +35,7 @@ const config: Config = {
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",
       md: "4px 4px 0px 0px #000",
-      lg: "0px 4px 0px 0px #fff",
+      lg: "0px 2px 0px 0px #fff",
     },
     fontFamily: {
       syne: ["Syne", ...fontFamily.sans],

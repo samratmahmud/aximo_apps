@@ -18,11 +18,13 @@ function SocialMedia(props: mediaProps) {
     <div
       onMouseEnter={() => setIcon(true)}
       onMouseOut={() => setIcon(false)}
-      className={`${
-        !icon ? "bg-black border border-white" : "bg-praimary border-black"
+      className={`hover:shadow-lg ${
+        !icon
+          ? "bg-black border border-white"
+          : "bg-praimary border border-black"
       } duration-500 rounded-full w-9 h-9`}
     >
-      <Link href={link}>
+      <Link href={link} target="_blank">
         {icons?.map(({icon1, icon2}, index) => (
           <div key={index} className="p-1.5">
             <img
