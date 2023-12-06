@@ -6,7 +6,7 @@ import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
 import Experiences from "./home/Experiences";
 import Peoples from "./home/people/Peoples";
-import Contract from "./home/Contract";
+import Contract from "./home/contact/Contract";
 
 export default function Home() {
   return (

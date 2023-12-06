@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         praimary: "#BFF747",
-        gray: {"200": "#FDFDE1", "300": "#e6e6e6"},
+        gray: {"200": "#FDFDE1", "300": "#e6e6e6", "400": "#ccc"},
       },
     },
     fontSize: {
@@ -23,10 +23,12 @@ const config: Config = {
       lg: ["35px", {lineHeight: "1.4em"}],
       xl: ["70px", {lineHeight: "1em", letterSpacing: "-.7px"}],
       "2xl": ["104px", {lineHeight: "1em", letterSpacing: "-.7px"}],
+      "3xl": ["24px", {lineHeight: "28px"}],
     },
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",
       md: "4px 4px 0px 0px #000",
+      lg: "0px 4px 0px 0px #fff",
     },
     fontFamily: {
       syne: ["Syne", ...fontFamily.sans],
