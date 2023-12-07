@@ -31,6 +31,9 @@ const config: Config = {
       xl: ["70px", {lineHeight: "1em", letterSpacing: "-.7px"}],
       "2xl": ["104px", {lineHeight: "1em", letterSpacing: "-.7px"}],
       "3xl": ["24px", {lineHeight: "28px"}],
+      "4xl": ["48px", {lineHeight: "1em", letterSpacing: "-1px"}],
+      "5xl": ["10px", {lineHeight: "1em"}],
+      "6xl": ["36px", {lineHeight: "1em", letterSpacing: "-.64px"}],
     },
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",
@@ -50,14 +53,14 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: ".75rem",
       },
     },
     screens: {
       sm: "600px",
       md: "768px",
       lg: "1024px",
-      xl: "1300px",
+      xl: "1288px",
       "2xl": "1920px",
     },
   },

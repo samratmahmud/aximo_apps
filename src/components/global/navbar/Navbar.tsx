@@ -2,6 +2,8 @@ import Buttons from "@/components/common/Buttons";
 import Link from "next/link";
 import React from "react";
 import Navitem from "./Navitem";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
 
 const navLinks = [
   {
@@ -43,23 +45,66 @@ const navLinks = [
 ];
 
 function Navbar() {
+  const [open, setOpen] = React.useState(false);
+  const toggle = () => setOpen((prev) => !prev);
   return (
-    <nav className="bg-black py-3.5 fixed left-0 right-0 z-10">
+    <nav className="bg-black py-4 fixed left-0 right-0 z-10">
       <div className="container">
         <div className="flex justify-between items-center gap-9">
           <div className="flex items-center gap-9">
             <Link href="/">
               <img src="/images/logo.svg" alt="" />
             </Link>
-            <div className="flex gap-1">
-              {navLinks.map(({title, path, list}, index) => (
-                <Navitem title={title} path={path} list={list} key={index} />
-              ))}
+            <div className="hidden lg:inline">
+              <div className="flex gap-1">
+                {navLinks.map(({title, path, list}, index) => (
+                  <Navitem title={title} path={path} list={list} key={index} />
+                ))}
+              </div>
             </div>
           </div>
-          <Link href="">
-            <Buttons name="Contact Us" />
-          </Link>
+          <div className="flex items-center gap-10">
+            <Link href="" className="hidden sm:inline">
+              <Buttons name="Contact Us" />
+            </Link>
+            <span onClick={toggle}>
+              <img src="/images/icons8-menu-30.png" alt="" />
+            </span>
+          </div>
+        </div>
+        <div className="lg:hidden">
+          <Drawer
+            onClose={toggle}
+            open={open}
+            direction="left"
+            style={{width: 320}}
+          >
+            <div className="flex flex-col justify-between h-full pb-4 px-4">
+              <div>
+                <div
+                  role="button"
+                  onClick={toggle}
+                  className="text-base leading-[50px] flex justify-end px-4"
+                >
+                  ×
+                </div>
+                <hr className="lg:hidden border border-gray-300" />
+                <div className="flex flex-col gap-1">
+                  {navLinks.map(({title, path, list}, index) => (
+                    <Navitem
+                      title={title}
+                      path={path}
+                      list={list}
+                      key={index}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="text-5xl text-center">
+                © Copyright 2023, All Rights Reserved by Mthemeus
+              </div>
+            </div>
+          </Drawer>
         </div>
       </div>
     </nav>
