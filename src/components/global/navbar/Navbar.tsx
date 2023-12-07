@@ -48,9 +48,9 @@ function Navbar() {
       <div className="container">
         <div className="flex justify-between items-center gap-9">
           <div className="flex items-center gap-9">
-            <div>
+            <Link href="/">
               <img src="/images/logo.svg" alt="" />
-            </div>
+            </Link>
             <div className="flex gap-1">
               {navLinks.map(({title, path, list}, index) => (
                 <Navitem title={title} path={path} list={list} key={index} />
