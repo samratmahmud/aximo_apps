@@ -38,15 +38,19 @@ const feadbackCards = [
 function Feadback() {
   return (
     <section>
-      <div className="container my-32">
-        <h2 className="text-xl font-bold font-syne max-w-4xl m-auto text-center mb-20">
+      <div className="container md:my-32 my-20">
+        <h2 className="lg:text-xl md:text-4xl text-lg font-bold font-syne max-w-4xl m-auto text-center md:mb-20 mb-10">
           Clients are always satisfied with us{" "}
           <span className="inline-flex">
             {" "}
-            <img src="/images/star2.png" alt="" />
+            <img
+              className="hidden md:inline lg:max-w-none md:max-w-[40px]"
+              src="/images/star2.png"
+              alt=""
+            />
           </span>
         </h2>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6">
           {feadbackCards.map(
             ({title, description, thumbnail, name, name2}, index) => (
               <div

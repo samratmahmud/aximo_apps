@@ -33,7 +33,7 @@ const config: Config = {
       "3xl": ["24px", {lineHeight: "28px"}],
       "4xl": ["48px", {lineHeight: "1em", letterSpacing: "-1px"}],
       "5xl": ["10px", {lineHeight: "1em"}],
-      "6xl": ["36px", {lineHeight: "1em", letterSpacing: "-.64px"}],
+      "6xl": ["35px", {lineHeight: "1em", letterSpacing: "-.64px"}],
     },
     boxShadow: {
       sm: "0 4px 0 0 #FDFDE1",

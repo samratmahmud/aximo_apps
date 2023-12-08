@@ -7,32 +7,24 @@ const cards = [
     title: "UI/UX Design",
     description:
       "Focusing on user interface (UI) and user experience (UX) design enhance the usability and accessibility of digital products & app.",
-    arrowIcon:
-      "https://html.favdevs.com/aximo/assets/images/icon/arrow-right.svg",
   },
   {
     logo: "/images/icons8-branding-company-96.png",
     title: "Graphic Design",
     description:
       "Creating visual elements such as logos, branding materials, page layout techniques, brochures, & other marketing collateral.",
-    arrowIcon:
-      "https://html.favdevs.com/aximo/assets/images/icon/arrow-right.svg",
   },
   {
     logo: "/images/icons8-web-64.png",
     title: "Web Design",
     description:
       "Designing and developing websites to ensure they are visually look and appealing, user-friendly, and functional your website.",
-    arrowIcon:
-      "https://html.favdevs.com/aximo/assets/images/icon/arrow-right.svg",
   },
   {
     logo: "/images/icons8-thinking-48.png",
     title: "Motion Graphics",
     description:
       "Creating animate graphics, videos for various purposes, including marketing and entertainment. To help sell a product or service.",
-    arrowIcon:
-      "https://html.favdevs.com/aximo/assets/images/icon/arrow-right.svg",
   },
 ];
 
@@ -52,8 +44,8 @@ function Cards() {
               />
             </span>
           </h2>
-          <div className="grid lg:grid-cols-2 gap-7">
-            {cards.map(({title, logo, description, arrowIcon}, index) => (
+          <div className="grid lg:grid-cols-2 gap-6">
+            {cards.map(({title, logo, description}, index) => (
               <div data-aos="fade-up">
                 <div
                   key={index}
@@ -67,7 +59,10 @@ function Cards() {
                   </div>
                   <div className="text-sm md:mb-7 mb-5">{description}</div>
                   <Link href="/">
-                    <img src={arrowIcon} alt="" />
+                    <img
+                      src="https://html.favdevs.com/aximo/assets/images/icon/arrow-right.svg"
+                      alt=""
+                    />
                   </Link>
                 </div>
               </div>

@@ -13,6 +13,7 @@ function Questions(props: questionProps) {
   const handelClick = () => {
     setOpen((open) => !open);
   };
+
   return (
     <div
       className={`flex flex-col gap-4 border-2 border-black rounded-3xl p-6 ${
@@ -20,7 +21,9 @@ function Questions(props: questionProps) {
       }`}
     >
       <div className="flex items-center justify-between">
-        <h3 className="text-base font-bold font-syne">{question}</h3>
+        <h3 className="lg:text-base text-3xl font-bold font-syne">
+          {question}
+        </h3>
         <button onClick={handelClick}>
           <img
             className={`duration-500 ${open ? "rotate-[270deg]" : "rotate-90"}`}
@@ -29,7 +32,7 @@ function Questions(props: questionProps) {
           />
         </button>
       </div>
-      {open && <p className="text-sm">{answer}</p>}
+      <div>{open && <p className="text-sm">{answer}</p>}</div>
     </div>
   );
 }

@@ -22,28 +22,32 @@ const questionsCard = [
 function FrequentlyQuestions() {
   return (
     <section>
-      <div className="container my-32 flex gap-4">
-        <div className="w-[63%]">
-          <h2 className="text-xl font-bold font-syne max-w-4xl mb-6">
+      <div className="container md:my-32 my-20 flex md:flex-row flex-col gap-7">
+        <div className="md:w-[63%]">
+          <h2 className="lg:text-xl md:text-4xl text-6xl font-bold font-syne max-w-4xl md:mb-6 mb-4 text-center md:text-left">
             Our high-quality{" "}
             <span className="inline-flex">
               {" "}
-              <img src="/images/star2.png" alt="" />
+              <img
+                className="hidden md:inline"
+                src="/images/star2.png"
+                alt=""
+              />
             </span>{" "}
             working processes{" "}
           </h2>
-          <p className="text-md mb-7">
+          <p className="md:text-md text-sm text-center md:text-left mb-7">
             We focus at every stage on effective communication and collaboration
             between the client and ensuring that the final design meets the
             client's objectives and expectations.
           </p>
-          <p className="text-md">
+          <p className="md:text-md text-sm text-center md:text-left">
             It is important to note that these are simplified steps, and the
             actual work process may vary depending on the complexity of the
             project.
           </p>
         </div>
-        <div data-aos="fade-up" className="w-[37%] flex flex-col gap-5">
+        <div data-aos="fade-up" className="md:w-[37%] flex flex-col gap-5">
           {questionsCard.map(({answer, question}, index) => (
             <Questions
               key={index}
