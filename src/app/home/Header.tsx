@@ -11,7 +11,7 @@ const imagesGroup = [
 function Header() {
   return (
     <section className="lg:pt-[200px] pt-32 lg:pb-28 pb-20 bg-black">
-      <div className="container overflow-hidden">
+      <div className="container overflow-hidden lg:overflow-visible">
         <div className="flex lg:flex-row flex-col justify-between lg:gap-7 gap-14">
           <div>
             <h1 className="xl:text-2xl md:text-xl text-4xl text-gray-200 font-bold mb-6 font-syne text-center lg:text-left">
@@ -37,9 +37,7 @@ function Header() {
                     {imagesGroup.map((image, index) => (
                       <div
                         key={index}
-                        data-aos="fade-up"
-                        data-aos-duration={`${index + 1}000`}
-                        className="-ml-1.5 first:-ml-0"
+                        className={`-ml-1.5 first:-ml-0 animate__animated animate__fadeInUp animate__delay-${index}s`}
                       >
                         <img className="rounded-full" src={image} alt="" />
                       </div>

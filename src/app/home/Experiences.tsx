@@ -4,7 +4,7 @@ import ScrollContainer from "react-indiana-drag-scroll";
 
 function Experiences() {
   return (
-    <section className="bg-black md:mb-32 mb-20">
+    <section className="bg-black">
       <ScrollContainer className="scroll-container">
         <div className="flex py-5 items-center">
           <h3 className="text-lg font-bold text-praimary font-syne uppercase mx-6">

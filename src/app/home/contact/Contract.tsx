@@ -59,17 +59,21 @@ function Contract() {
   return (
     <section className="bg-black">
       <div className="container">
-        <div className="flex justify-between gap-5 py-32">
-          <div className="w-[54%]">
-            <h2 className="text-xl text-gray-200 font-bold font-syne max-w-3xl mb-6">
+        <div className="flex lg:flex-row flex-col justify-between gap-5 md:py-32 py-20">
+          <div className="lg:w-[54%]">
+            <h2 className="lg:text-xl md:text-4xl text-6xl text-gray-200 font-bold font-syne lg:max-w-3xl mb-6 max-w-md m-auto text-center lg:text-left">
               Let's start a{" "}
               <span className="inline-flex">
                 {" "}
-                <img src="/images/star2.png" alt="" />
+                <img
+                  className=" max-w-[40px] lg:max-w-none"
+                  src="/images/star2.png"
+                  alt=""
+                />
               </span>{" "}
               project together{" "}
             </h2>
-            <p className="text-md text-gray-200 mb-12">
+            <p className="md:text-md text-sm text-center lg:text-left text-gray-200 md:mb-12 mb-5">
               We work closely with our clients to understand their objectives,
               target audience, and unique needs. We use our creative skills to
               translate these requirements and practical design solutions.
@@ -100,7 +104,7 @@ function Contract() {
                   ))}
                 </div>
               </div>
-              <div>
+              <div className="hidden lg:inline">
                 <img
                   className="animate__slideInLeft icon animate__animated animate__infinite"
                   src="/images/shape1.png"
@@ -109,7 +113,7 @@ function Contract() {
               </div>
             </div>
           </div>
-          <div className="w-[41%]">
+          <div className="lg:w-[41%]">
             <h2 className="text-3xl font-syne font-bold mb-6 text-gray-200">
               Send us a message
             </h2>
@@ -134,7 +138,7 @@ function Contract() {
           </div>
         </div>
         <hr className="border border-gray-500" />
-        <div className="flex justify-between items-center gap-5 py-9">
+        <div className="flex lg:flex-row flex-col justify-between items-center gap-5 py-9">
           <img src="/images/logo.svg" alt="" />
           <p className="text-sm text-center text-gray-600">
             © Copyright 2023, All Rights Reserved by Mthemeus

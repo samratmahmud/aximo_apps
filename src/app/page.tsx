@@ -18,8 +18,8 @@ export default function Home() {
       <FrequentlyQuestions />
       <Feadback />
       <Experiences />
-      {/* <Peoples /> */}
-      {/* <Contract /> */}
+      <Peoples />
+      <Contract />
     </main>
   );
 }

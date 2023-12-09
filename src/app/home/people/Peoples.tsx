@@ -180,15 +180,19 @@ const peopleImages = [
 function Peoples() {
   return (
     <section>
-      <div className="container mb-24">
-        <h2 className="text-xl font-bold font-syne max-w-4xl m-auto text-center mb-20">
+      <div className="container md:my-32 my-20">
+        <h2 className="lg:text-xl md:text-4xl text-6xl font-bold font-syne max-w-4xl m-auto text-center lg:mb-20 mb-10">
           We have a team of creative people{" "}
           <span className="inline-flex">
             {" "}
-            <img src="/images/star2.png" alt="" />
+            <img
+              className="max-w-[36px] lg:max-w-none hidden md:inline"
+              src="/images/star2.png"
+              alt=""
+            />
           </span>
         </h2>
-        <div className="flex gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
           {peopleImages.map(
             ({thumbnail, name, describtion, socialSite}, index) => (
               <div data-aos="fade-up" data-aos-duration={`${index + 0}000`}>
