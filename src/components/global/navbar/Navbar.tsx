@@ -67,7 +67,7 @@ function Navbar() {
             <Link href="" className="hidden sm:inline">
               <Buttons name="Contact Us" />
             </Link>
-            <span onClick={toggle}>
+            <span onClick={toggle} className="lg:hidden">
               <img src="/images/icons8-menu-30.png" alt="" />
             </span>
           </div>
@@ -84,7 +84,7 @@ function Navbar() {
                 <div
                   role="button"
                   onClick={toggle}
-                  className="text-base leading-[50px] flex justify-end px-4"
+                  className="text-base leading-[50px] flex justify-end"
                 >
                   ×
                 </div>

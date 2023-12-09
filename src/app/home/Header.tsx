@@ -51,7 +51,7 @@ function Header() {
                   <Buttons
                     className="pl-[42px] pr-1.5"
                     name="Book a free consultation "
-                    icon="/images/icons8-call-24.png"
+                    icon="/images/icons8-call-30.png"
                   />
                 </Link>
               </div>

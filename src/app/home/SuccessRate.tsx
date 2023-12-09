@@ -1,5 +1,6 @@
 "use client";
 import Buttons from "@/components/common/Buttons";
+import Link from "next/link";
 import React from "react";
 import CountUp from "react-countup";
 
@@ -51,7 +52,9 @@ function SuccessRate() {
               src="/images/video-bg.png"
               alt=""
             />
-            <span
+            <Link
+              href="https://www.youtube.com/watch?v=Vx2aLNgGoAE"
+              target="_blank"
               role="button"
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
@@ -60,7 +63,7 @@ function SuccessRate() {
                 name="Play"
                 icon="/images/icons8-play-button-30.png"
               />
-            </span>
+            </Link>
           </div>
           <div className="bg-black rounded-3xl lg:w-[33%] flex flex-col gap-5 p-[30px]">
             {ratings.map(({number, title, value}, index) => (

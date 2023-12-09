@@ -14,7 +14,7 @@ function Buttons(props: ButtonsProps) {
       {name}
       {icon && (
         <img
-          className="bg-black p-[13px] rounded-full h-[50px] w-[50px]"
+          className="bg-black p-2 rounded-full h-[50px] w-[50px]"
           src={icon}
           alt=""
         />

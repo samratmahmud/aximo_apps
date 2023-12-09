@@ -66,7 +66,7 @@ function Contract() {
               <span className="inline-flex">
                 {" "}
                 <img
-                  className=" max-w-[40px] lg:max-w-none"
+                  className=" max-w-[40px] lg:max-w-none hidden md:inline"
                   src="/images/star2.png"
                   alt=""
                 />
@@ -78,8 +78,8 @@ function Contract() {
               target audience, and unique needs. We use our creative skills to
               translate these requirements and practical design solutions.
             </p>
-            <div className="flex justify-between items-center">
-              <div>
+            <div className="flex lg:justify-between justify-center items-center text-center">
+              <div className="">
                 <div className="flex flex-col gap-3 mb-12">
                   {contractProps.map(({title, value}, index) => (
                     <div key={index}>
@@ -88,7 +88,7 @@ function Contract() {
                     </div>
                   ))}
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-3 outlineoutline-white">
                   {socialContract.map(({icons, link}, index) => (
                     <Link
                       href={link}
@@ -138,7 +138,7 @@ function Contract() {
           </div>
         </div>
         <hr className="border border-gray-500" />
-        <div className="flex lg:flex-row flex-col justify-between items-center gap-5 py-9">
+        <div className="flex lg:flex-row flex-col justify-between items-center gap-5 lg:py-9 p-[30px]">
           <img src="/images/logo.svg" alt="" />
           <p className="text-sm text-center text-gray-600">
             © Copyright 2023, All Rights Reserved by Mthemeus
