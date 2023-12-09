@@ -1,8 +1,22 @@
-import {Main} from "next/document";
 import React from "react";
+import AboutHeader from "./AboutHeader";
+import SuccessRate from "../home/SuccessRate";
+import MissionNVision from "./MissionNVision";
+import Experiences from "../home/Experiences";
+import AboutEmployes from "./AboutEmploye";
+import Contract from "../home/contact/Contract";
 
 function page() {
-  return <main></main>;
+  return (
+    <main>
+      <AboutHeader />
+      <SuccessRate />
+      <MissionNVision />
+      <Experiences />
+      <AboutEmployes />
+      <Contract />
+    </main>
+  );
 }
 
 export default page;

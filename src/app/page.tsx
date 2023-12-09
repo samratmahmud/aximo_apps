@@ -5,8 +5,8 @@ import SliderCards from "./home/SliderCards";
 import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
 import Experiences from "./home/Experiences";
-import Peoples from "./home/people/Peoples";
 import Contract from "./home/contact/Contract";
+import Employes from "./home/employe/Employes";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <FrequentlyQuestions />
       <Feadback />
       <Experiences />
-      <Peoples />
+      <Employes />
       <Contract />
     </main>
   );

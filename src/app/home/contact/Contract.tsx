@@ -63,7 +63,7 @@ function Contract() {
           <div className="lg:w-[54%]">
             <h2 className="lg:text-xl md:text-4xl text-6xl text-gray-200 font-bold font-syne lg:max-w-3xl mb-6 max-w-md m-auto text-center lg:text-left">
               Let's start a{" "}
-              <span className="inline-flex">
+              <span className="hidden md:inline">
                 {" "}
                 <img
                   className=" max-w-[40px] lg:max-w-none hidden md:inline"
@@ -78,7 +78,7 @@ function Contract() {
               target audience, and unique needs. We use our creative skills to
               translate these requirements and practical design solutions.
             </p>
-            <div className="flex lg:justify-between justify-center items-center text-center">
+            <div className="flex lg:justify-between justify-center items-center text-center lg:text-left">
               <div className="">
                 <div className="flex flex-col gap-3 mb-12">
                   {contractProps.map(({title, value}, index) => (

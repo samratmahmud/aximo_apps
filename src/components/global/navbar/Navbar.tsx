@@ -17,12 +17,12 @@ const navLinks = [
       {title: "Digital Marketing", path: "/"},
     ],
   },
-  {title: "About Us", path: "/"},
+  {title: "About Us", path: "/about_us"},
   {
     title: "Pages",
     path: "/",
     list: [
-      {title: "About Us", path: "/"},
+      {title: "About Us", path: "/about_us"},
       {title: "Pricing", path: "/"},
       {title: "blog ", path: "/"},
       {title: "Service", path: "/"},

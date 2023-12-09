@@ -6,17 +6,17 @@ import CountUp from "react-countup";
 
 const ratings = [
   {
-    number: <CountUp start={0} end={15} />,
+    number: <CountUp duration={5} start={0} end={15} />,
     value: "+",
     title: "Years of experience",
   },
   {
-    number: <CountUp start={0} end={120} />,
+    number: <CountUp duration={5} start={0} end={120} />,
     value: "k",
     title: "Successful projects",
   },
   {
-    number: <CountUp start={0} end={100} />,
+    number: <CountUp duration={5} start={0} end={100} />,
     value: "%",
     title: "Client satisfaction rate",
   },
