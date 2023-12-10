@@ -353,7 +353,7 @@ function AboutEmployes() {
   return (
     <section>
       <div className="container md:my-32 my-20">
-        <h2 className="lg:text-xl md:text-4xl text-6xl font-bold font-syne max-w-4xl m-auto text-center lg:mb-20 mb-10">
+        <h2 className="lg:text-xl md:text-4xl text-6xl md:font-bold font-semibold font-syne max-w-4xl m-auto text-center lg:mb-20 mb-10">
           We have a team of creative people{" "}
           <span className="inline-flex">
             {" "}
@@ -364,7 +364,7 @@ function AboutEmployes() {
             />
           </span>
         </h2>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7 lg:gap-5">
           {peopleDetailsGroup.map(
             ({thumbnail, name, describtion, socialSite}, index) => (
               <div data-aos="fade-up" data-aos-duration={`${index + 0}000`}>

@@ -41,7 +41,7 @@ const navLinks = [
       {title: "blog Details", path: "/"},
     ],
   },
-  {title: "Contact Us", path: "/"},
+  {title: "Contact Us", path: "/contact_us"},
 ];
 
 function Navbar() {

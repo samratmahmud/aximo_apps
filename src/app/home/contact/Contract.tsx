@@ -2,8 +2,9 @@
 import ContactMedia from "@/app/home/contact/ContactMedia";
 import Link from "next/link";
 import React from "react";
-import TextFild from "./TextFild";
+import TextFild from "../../../components/common/TextFild";
 import Buttons from "@/components/common/Buttons";
+import TextArea from "@/components/common/TextArea";
 
 const contractProps = [
   {
@@ -121,12 +122,7 @@ function Contract() {
               <TextFild placeholder="Your name" type="text" />
               <TextFild placeholder="Your email address" type="email" />
               <TextFild placeholder="+088-234-6849" type="text" />
-              <textarea
-                className="bg-transparent focus:outline border border-gray-200 min-h-[150px] rounded-[20px] focus:border-praimary focus:border py-3.5 px-6 text-xs font-bold placeholder:text-gray-400 text-gray-400 w-full"
-                placeholder="Write your message here..."
-                name=""
-                id=""
-              ></textarea>
+              <TextArea placeholder="Write your message here..." />
             </div>
             <Link href="/">
               <Buttons

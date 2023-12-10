@@ -27,8 +27,8 @@ const MissionVisionDetails = [
 function MissionNVision() {
   return (
     <section>
-      <div className="container my-32">
-        <h2 className="xl:text-xl md:text-4xl text-6xl font-bold font-syne max-w-4xl m-auto text-center mb-6">
+      <div className="container md:my-32 my-20">
+        <h2 className="xl:text-xl md:text-4xl text-6xl md:font-bold font-semibold font-syne max-w-4xl m-auto text-center md:mb-6 mb-5">
           We think our story is{" "}
           <span className="inline-flex">
             {" "}
@@ -41,16 +41,17 @@ function MissionNVision() {
           <br />
           worth sharing with you{" "}
         </h2>
-        <p className="text-md text-center max-w-[850px] m-auto mb-20">
+        <p className="md:text-md text-sm text-center max-w-[850px] m-auto md:mb-20 mb-10">
           Established in 2008, we began as a small but ambitious team. We
           understood the importance of creative and tech-savvy solutions to help
           businesses succeed in the ever-changing digital landscape.
         </p>
-        <div className="grid grid-cols-3 gap-6 mb-11">
+        <div className="grid lg:grid-cols-3 gap-6 mb-11">
           {PictureGroup.map((picture, index) => (
             <div
+              data-aos="fade-up"
               key={index}
-              className="first:col-span-2 last:col-span-2 border-[5px] border-black rounded-[20px] overflow-hidden"
+              className="lg:first:col-span-2 lg:last:col-span-2 border-[5px] border-black rounded-[20px] overflow-hidden"
             >
               <img
                 className="scale-100 hover:scale-105 duration-500 h-full w-full"
@@ -60,12 +61,14 @@ function MissionNVision() {
             </div>
           ))}
         </div>
-        <div className="flex gap-6">
+        <div className="flex lg:flex-row flex-col gap-5">
           {MissionVisionDetails.map(
             ({title, descriptio1, description2}, index) => (
-              <div key={index}>
-                <h2 className="text-base mb-4 font-bold font-syne">{title}</h2>
-                <p className="text-sm mb-7">{descriptio1}</p>
+              <div key={index} className="text-center lg:text-left">
+                <h2 className="text-base md:mb-4 mb-2.5 font-bold font-syne">
+                  {title}
+                </h2>
+                <p className="text-sm md:mb-7 mb-4">{descriptio1}</p>
                 <p className="text-sm">{description2}</p>
               </div>
             )

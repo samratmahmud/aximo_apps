@@ -1,12 +1,12 @@
 import HeaderProps from "@/components/common/HeaderProps";
 import React from "react";
 
-function AboutHeader() {
+function ContactHeader() {
   return (
     <section>
-      <HeaderProps title="About Us" subtitle="About Us" />
+      <HeaderProps title="Contact Us" subtitle="Contact Us" />
     </section>
   );
 }
 
-export default AboutHeader;
+export default ContactHeader;

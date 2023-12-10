@@ -10,12 +10,12 @@ function HeaderProps(props: HeaderPropsProps) {
   const {title, subtitle} = props;
 
   return (
-    <div className="bg-black pt-48 pb-32">
-      <h2 className="text-2xl font-bold text-center text-gray-200 font-syne mb-12">
+    <div className="bg-black lg:pt-48 md:pt-44 pt-32 lg:pb-32 md:pb-24 pb-20">
+      <h2 className="lg:text-2xl md:text-xl text-4xl font-bold text-center text-gray-200 font-syne lg:mb-12 mb-7">
         {title}
       </h2>
-      <div className="flex flex-row items-center gap-[18px] justify-center">
-        <Link href="/" className="text-md capitalize text-gray-200">
+      <div className="md:text-md text-sm flex flex-row items-center gap-[18px] justify-center">
+        <Link href="/" className="capitalize text-gray-200">
           Home
         </Link>
         <span>
@@ -24,7 +24,7 @@ function HeaderProps(props: HeaderPropsProps) {
             alt=""
           />
         </span>
-        <h6 className="text-md font-bold text-praimary">{subtitle}</h6>
+        <h6 className="font-bold text-praimary">{subtitle}</h6>
       </div>
     </div>
   );

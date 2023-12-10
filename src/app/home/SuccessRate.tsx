@@ -6,17 +6,17 @@ import CountUp from "react-countup";
 
 const ratings = [
   {
-    number: <CountUp duration={5} start={0} end={15} />,
+    number: <CountUp duration={8} start={0} end={15} />,
     value: "+",
     title: "Years of experience",
   },
   {
-    number: <CountUp duration={5} start={0} end={120} />,
+    number: <CountUp duration={8} start={0} end={120} />,
     value: "k",
     title: "Successful projects",
   },
   {
-    number: <CountUp duration={5} start={0} end={100} />,
+    number: <CountUp duration={8} start={0} end={100} />,
     value: "%",
     title: "Client satisfaction rate",
   },
@@ -27,7 +27,7 @@ function SuccessRate() {
     <section>
       <div className="container lg:my-32 my-20">
         <div className="flex lg:flex-row flex-col justify-between items-center mb-[60px] lg:mb-20">
-          <h2 className="xl:text-xl md:text-4xl text-6xl font-bold font-syne max-w-4xl text-center lg:text-left mb-5">
+          <h2 className="xl:text-xl md:text-4xl text-6xl md:font-bold font-semibold font-syne max-w-4xl text-center lg:text-left mb-5">
             We make your{" "}
             <span className="inline-flex">
               {" "}
