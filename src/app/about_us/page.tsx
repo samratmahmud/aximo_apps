@@ -4,7 +4,7 @@ import SuccessRate from "../home/SuccessRate";
 import MissionNVision from "./MissionNVision";
 import Experiences from "../home/Experiences";
 import AboutEmployes from "./AboutEmploye";
-import Contract from "../home/contact/Contract";
+import Contract from "../../components/global/footer/Footer";
 
 function page() {
   return (

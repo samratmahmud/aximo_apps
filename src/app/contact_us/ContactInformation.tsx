@@ -22,9 +22,9 @@ const contactCard = [
 
 function ContactInformation() {
   return (
-    <section>
-      <div className="container md:my-32 my-20">
-        <h2 className="xl:text-xl md:text-4xl text-6xl md:font-bold font-semibold font-syne max-w-4xl m-auto text-center lg:text-left md:mb-12 mb-7">
+    <section className="container">
+      <div className="md:my-32 my-20">
+        <h2 className="xl:text-xl md:text-4xl text-6xl md:font-bold font-semibold font-syne max-w-4xl m-auto text-center lg:text-left mb-12">
           Contact Information{" "}
           <span className="inline-flex">
             {" "}
@@ -35,11 +35,11 @@ function ContactInformation() {
             />
           </span>
         </h2>
-        <div className="grid grid-cols-3 gap-6 mb-[60px]">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-6 mb-[60px]">
           {contactCard.map(({title, icon, contain1, contain2}, index) => (
             <div
               key={index}
-              className="bg-black text-gray-200 rounded-xl py-[30px] px-16 flex items-start gap-6"
+              className="bg-black text-gray-200 rounded-xl py-[30px] xl:px-16 lg:px-10 px-[30px] flex items-start gap-6"
             >
               <img src={icon} alt="" />
               <div>
@@ -57,6 +57,7 @@ function ContactInformation() {
           ></iframe>
         </div>
       </div>
+      <hr className="border border-gray-300" />
     </section>
   );
 }

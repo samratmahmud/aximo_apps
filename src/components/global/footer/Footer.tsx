@@ -1,8 +1,8 @@
 "use client";
-import ContactMedia from "@/app/home/contact/ContactMedia";
+import ContactMedia from "@/components/global/footer/ContactMedia";
 import Link from "next/link";
 import React from "react";
-import TextFild from "../../../components/common/TextFild";
+import TextFild from "../../common/TextFild";
 import Buttons from "@/components/common/Buttons";
 import TextArea from "@/components/common/TextArea";
 
@@ -56,7 +56,7 @@ const socialContract = [
   },
 ];
 
-function Contract() {
+function Footer() {
   return (
     <section className="bg-black">
       <div className="container">
@@ -145,4 +145,4 @@ function Contract() {
   );
 }
 
-export default Contract;
+export default Footer;

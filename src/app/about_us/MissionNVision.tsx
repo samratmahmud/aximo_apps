@@ -50,6 +50,7 @@ function MissionNVision() {
           {PictureGroup.map((picture, index) => (
             <div
               data-aos="fade-up"
+              data-aos-duration={`${index * 500}`}
               key={index}
               className="lg:first:col-span-2 lg:last:col-span-2 border-[5px] border-black rounded-[20px] overflow-hidden"
             >

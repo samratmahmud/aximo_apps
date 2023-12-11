@@ -1,8 +1,10 @@
 import React from "react";
 import ContactHeader from "./ContactHeader";
 import ContactForm from "./ContactForm";
-import Contract from "../home/contact/Contract";
+import Contract from "../../components/global/footer/Footer";
 import ContactInformation from "./ContactInformation";
+import Faqs from "./Faqs";
+import Footer from "../../components/global/footer/Footer";
 
 function page() {
   return (
@@ -10,7 +12,8 @@ function page() {
       <ContactHeader />
       <ContactForm />
       <ContactInformation />
-      <Contract />
+      <Faqs />
+      <Footer />
     </main>
   );
 }

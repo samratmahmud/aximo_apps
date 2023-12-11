@@ -46,7 +46,11 @@ function SuccessRate() {
           </p>
         </div>
         <div className="flex lg:flex-row flex-col justify-between gap-7">
-          <div className="relative border-[5px] border-black rounded-3xl lg:w-2/3">
+          <div
+            className="relative border-[5px] border-black rounded-3xl lg:w-2/3"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <img
               className="rounded-2xl h-full w-full"
               src="/images/video-bg.png"

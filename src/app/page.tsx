@@ -5,8 +5,9 @@ import SliderCards from "./home/SliderCards";
 import FrequentlyQuestions from "./home/FrequentlyQuestions";
 import Feadback from "./home/Feadback";
 import Experiences from "./home/Experiences";
-import Contract from "./home/contact/Contract";
+import Contract from "../components/global/footer/Footer";
 import Employes from "./home/employe/Employes";
+import Footer from "../components/global/footer/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <Feadback />
       <Experiences />
       <Employes />
-      <Contract />
+      <Footer />
     </main>
   );
 }
