@@ -107,7 +107,7 @@ function Contract() {
               </div>
               <div className="hidden lg:inline">
                 <img
-                  className="animate__slideInLeft icon animate__animated animate__infinite"
+                  className="line-movement"
                   src="/images/shape1.png"
                   alt=""
                 />

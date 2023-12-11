@@ -55,6 +55,7 @@ function Feadback() {
             ({title, description, thumbnail, name, name2}, index) => (
               <div
                 data-aos="fade-up"
+                data-aos-delay={index * 200}
                 key={index}
                 className="border-2 border-black rounded-3xl p-[30px] hover:shadow-md duration-500"
               >

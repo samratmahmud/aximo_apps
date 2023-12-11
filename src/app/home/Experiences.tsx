@@ -19,7 +19,7 @@ function Experiences() {
               LET'S CREATE NEW EXPERIENCES
             </h3>
             <img
-              className="w-11 h-11 animate-spin"
+              className="w-11 h-11 animate-spin  foobar"
               src="/images/star2.png"
               alt=""
             />

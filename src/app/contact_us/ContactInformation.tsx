@@ -50,6 +50,12 @@ function ContactInformation() {
             </div>
           ))}
         </div>
+        <div className=" w-full min-h-[600px]">
+          <iframe
+            className="w-full h-screen border-[5px] border-black rounded-3xl"
+            src="/about_us"
+          ></iframe>
+        </div>
       </div>
     </section>
   );

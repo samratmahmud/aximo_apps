@@ -37,7 +37,9 @@ function Header() {
                     {imagesGroup.map((image, index) => (
                       <div
                         key={index}
-                        className={`-ml-1.5 first:-ml-0 animate__animated animate__fadeInUp animate__delay-${index}s`}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                        className="-ml-1.5 first:-ml-0"
                       >
                         <img className="rounded-full" src={image} alt="" />
                       </div>
@@ -57,7 +59,7 @@ function Header() {
               </div>
               <div className="absolute right-0 bottom-0 hidden lg:inline">
                 <img
-                  className="animate__slideInLeft icon animate__animated animate__infinite xl:max-w-[284px] max-w-[184px]"
+                  className="line-movement xl:max-w-[284px] max-w-[184px]"
                   src="/images/shape1.png"
                   alt=""
                 />

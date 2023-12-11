@@ -367,7 +367,7 @@ function AboutEmployes() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-7 lg:gap-5">
           {peopleDetailsGroup.map(
             ({thumbnail, name, describtion, socialSite}, index) => (
-              <div data-aos="fade-up" data-aos-duration={`${index + 0}000`}>
+              <div data-aos="fade-up" data-aos-delay={`${index * 50}`}>
                 <PeopleGroup
                   key={index}
                   thumbnail={thumbnail}
